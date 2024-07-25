@@ -16,6 +16,7 @@ TeXt is a super customizable Jekyll theme for personal site, team site, blog, pr
 
 ## Features
 
+
 - Responsive
 - Semantic HTML
 - Skins
