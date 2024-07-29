@@ -1,6 +1,6 @@
 ---
 title: StringBuilder의 모든것!
-tags: 자바
+tags: 자바 문법
 article_header:
 type: cover
 ---
