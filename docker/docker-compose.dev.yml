@@ -1,13 +1,13 @@
 version: "3.5"
 
 services:
-  jekyll-text-theme_dev:
-    image: jickdo-io:latest
+  jickdo-io-dev:
+    image: jickdo-io:20240803160605
     environment:
       - JEKYLL_ENV
     ports:
       - 4000:4000
-    container_name: jickDo-io
+    container_name: jickdo-io
     volumes:
       - ..:/usr/src/app
     stdin_open: true
