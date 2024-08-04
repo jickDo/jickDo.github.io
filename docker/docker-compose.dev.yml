@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   jickdo-io-dev:
-    image: jickdo-io:20240803160605
+    image: jickdo-io:20240804232723
     environment:
       - JEKYLL_ENV
     ports:
