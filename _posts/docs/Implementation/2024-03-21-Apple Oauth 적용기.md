@@ -368,26 +368,8 @@ return AppleOauthRequest(
 여기까지 하면, 필요한 사용자의 정보를 추출할 수 있어 그것을 기반으로 서비스 내부의 **JWT**토큰으로 만들어 사용하던지, 추가적으로 애플에서 **AccessToken**과 **RefreshToken**을 추가적으로 받아 진행할 수 있다. 데이원에서는 내부 **JWT**토큰을 이용하고 있기 때문에 추가적인 로직은 진행하지 않기로 했다.
 
 참고 문헌:
-[https://developer.apple.com/documentation/sign\_in\_with\_apple/sign\_in\_with\_apple\_rest\_api/verifying\_a\_user](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_rest_api/verifying_a_user)
+[애플 공식문서](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_rest_api/verifying_a_user)
 
-[Verifying a user | Apple Developer Documentation
+[FeignClient 이용한 애플 Oauth 구현](https://kth990303.tistory.com/437)
 
-Check the validity and integrity of a user’s identity token.
-
-developer.apple.com](https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_rest_api/verifying_a_user)
-
-[https://kth990303.tistory.com/437](https://kth990303.tistory.com/437)
-
-[\[Spring\] FeignClient를 이용한 Apple OAuth 구현 일지 (2)
-
-해당 글에서는 Apple OAuth 연동 프로덕션 코드와 테스트 코드에 대해 다룹니다. 모카콩에서는 iOS 앱 배포를 위해 Apple OAuth를 구현했습니다. Apple OAuth 이론, FeignClient 설정과 선정 이유, 관련 프로덕
-
-kth990303.tistory.com](https://kth990303.tistory.com/437)
-
-[https://velog.io/@vamos\_eon/JWT%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-1](https://velog.io/@vamos_eon/JWT%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-1)
-
-[JWT란 무엇인가? 그리고 어떻게 사용하는가? (1) - 개념
-
-안녕하세요, 주니어 개발자 Eon입니다.오늘 다룰 내용은 JWT (Json Web Token)입니다.사용하는 / 사용되는 로직은 다음 포스트에서 다루겠습니다.토큰 관련된 인증은 대부분 로그인할 때 사용됩니다.
-
-velog.io](https://velog.io/@vamos_eon/JWT%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-1)
+[JWT에 대한 내용](https://velog.io/@vamos_eon/JWT%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-1)

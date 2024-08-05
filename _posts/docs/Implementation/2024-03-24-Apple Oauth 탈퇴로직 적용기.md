@@ -224,18 +224,8 @@ Revoke Api는 토큰 생성로직과 상당히 비슷하기 때문에 코드를 
 
 #### 참고 문헌:
 
-[https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret)
+[애플 공식문서](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret)
 
-[Creating a client secret | Apple Developer Documentation
 
-Generate a signed token to identify your client application.
+[애플 로그인 탈퇴과정](https://velog.io/@givepro91/jjo2cyus#client_secret-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95)
 
-developer.apple.com](https://developer.apple.com/documentation/accountorganizationaldatasharing/creating-a-client-secret)
-
-[https://velog.io/@givepro91/jjo2cyus#client\_secret-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95](https://velog.io/@givepro91/jjo2cyus#client_secret-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95)
-
-[애플 로그인 및 탈퇴 과정
-
-애플 로그인 및 탈퇴 과정 iOS APP 심사 중 아래와 같은 사유로 심사 리젝 응답을 받았다.
-
-velog.io](https://velog.io/@givepro91/jjo2cyus#client_secret-%EC%83%9D%EC%84%B1-%EB%B0%A9%EB%B2%95)
