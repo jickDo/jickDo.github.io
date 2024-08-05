@@ -15,7 +15,7 @@ type: cover
 
 ---
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Implementation/apple/1AppleFlow.png)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Implementation/Apple/1AppleFlow.png)
 
 전체적인 회원가입 플로우이다. 애플 소셜 로그인의 경우에는 여타한 소셜로그인에 비해서 정형화된 느낌이 없었다. 그렇게 생각한 이유는 추후에 자세하게 설명하게 되겠지만, 토큰을 발급받는 과정이나 추가적인 검증부분이 필수가 아니기 때문이다. 즉 개발자가 상황에 맞게 필요한 부분을 맞춰 나가야 한다.
 
@@ -47,13 +47,13 @@ type: cover
 
 플로우상 3번 과정에 해당하며, 사용자가 회원가입을 요청하고 프론트측에서 Identity Token을 정상적으로 반환하였다는 가정하에 진행하겠다.
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Implementation/apple/2PublicKeyReq.png)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Implementation/Apple/2PublicKeyReq.png)
 
 위 애플측 Api서버로 요청을 하게되면 애플측에서 여러가지의 공개키들을 반환하게 된다.  요청시 추가적인 요청값을 필요하지 않는 Api기 때문에 사진의 엔드포인트로 요청을 날리면 공개키 목록들이 반환된다.
 
 위 Api를 포스트맨에서 간단한 Api를 만들고 전송해보았다.
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Implementation/apple/3PublicKeyReq.png)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Implementation/Apple/3PublicKeyReq.png)
 
 ```
 {
@@ -207,7 +207,7 @@ developer.apple.com](https://developer.apple.com/documentation/sign_in_with_appl
 
 코드의 구조와 상수선언은 위와같은데, **IDENTITY\_TOKEN\_VALUE\_DELIMITER**와 **HEADER\_INDEX**의 설정은 **JWT**토큰의 구조를 알고있어야 파싱할 수 있다.
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Implementation/apple/4JWT.png)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Implementation/Apple/4JWT.png)
 
 **JWT**토큰은 위 사진과 같이 헤더, 페이로드, 시그니처로 나눠지게 되고 우리가 필요한 부분은 **Identity Token**의 헤더이기 때문에 "."을 기준으로 split하고, 인덱스가 시작인 "0"을 파싱한것이다. 추가적으로 로직에서 바로 "**\\\\.**" 혹은 "**0**"을 넣게 되면 이해하기 어려운 **매직넘버** 가 되기 때문에, 이를 상수처리를 한것이다.
 
