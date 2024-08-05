@@ -27,4 +27,6 @@ _site/
 .jekyll-cache/
 
 docker_pipeline.sh
-./docker
+
+/docker/*.yml
+/docker/*.conf
