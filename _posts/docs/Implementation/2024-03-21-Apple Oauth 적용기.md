@@ -1,6 +1,6 @@
 ---
-title: 효율적인 공통관심사 처리
-tags: 스프링 로깅
+title: Apple Oauth 적용기
+tags: 구현
 article_header:
 type: cover
 ---
