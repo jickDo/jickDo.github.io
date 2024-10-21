@@ -39,9 +39,9 @@ type: cover
 
 ## SNS?
 
-**SNS**는 PUB/SUB형태의 aws내부 혹은 외부 서비스로 메시지를 보내는 서비스입니다.
+**SNS**는 PUB/SUB형태의 aws내부 혹은 외부 서비스로 메시지를 보내는 서비스이다.
 
-사진과 같이 작성하고 생성을 하면 됩니다.
+사진과 같이 작성하고 생성을 하면 된다.
 
 <br>
 
@@ -54,9 +54,9 @@ type: cover
 
 ---
 
-다음으로는 문제가 발생한 경우 **CloudWatch**가 문제를 트리거 할 수 있도록, 기준을 잡아줘야 합니다.
+다음으로는 문제가 발생한 경우 **CloudWatch**가 문제를 트리거 할 수 있도록, 기준을 잡아줘야 한다.
 
-현재 **CPU** 사용량에 대한 트리깅을 할거기 때문에, 아래와 같은 설정을 인스턴스 이름을 확인 후 진행합니다.
+현재 **CPU** 사용량에 대한 트리깅을 할거기 때문에, 아래와 같은 설정을 인스턴스 이름을 확인 후 진행한다.
 
 <br>
 
@@ -64,9 +64,9 @@ type: cover
 
 <br>
 
-다음으로 넘어가게 되면 아래와 같이 경고를 트리거 할 조건을 설정할 수 있습니다. 대표적으로 기간이나 임계치를 설정 할 수 있습니다.
+다음으로 넘어가게 되면 아래와 같이 경고를 트리거 할 조건을 설정할 수 있다. 대표적으로 기간이나 임계치를 설정 할 수 있다.
 
-저는 5분동안 CPU사용률이 80%를 초과한 경우 트리거 하도록 설정했습니다.
+5분동안 CPU사용률이 80%를 초과한 경우 트리거 하도록 설정 하겠다.
 
 ![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/condition2.png)
 
@@ -79,7 +79,7 @@ type: cover
 <br>
 <br>
 
-다음으로 넘어가게 되면 아래처럼 알림 전송에 대한 sns연결 부분이 나오는데 좀 전에 생성한 sns을 연결하면 됩니다.
+다음으로 넘어가게 되면 아래처럼 알림 전송에 대한 sns연결 부분이 나오는데 좀 전에 생성한 sns을 연결하면 된다.
 
 ![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/connection.png)
 
@@ -91,9 +91,9 @@ type: cover
 
 ---
 
-여기까지 진행했으면 이제 slack으로 넘어가서 WebHook Url을 생성해야 합니다.
+여기까지 진행했으면 이제 slack으로 넘어가서 WebHook Url을 생성해야 한다.
 
-슬랙 채널탭을 클릭하고 통합에서 앱추가를 선택하게 되면 아래와 같은 앱이 있습니다. 그것을 추가하고 URL을 받으면 됩니다.
+슬랙 채널탭을 클릭하고 통합에서 앱추가를 선택하게 되면 아래와 같은 앱이 있다. 그것을 추가하고 URL을 받으면 된다.
 
 ![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/webhook.png)
 
@@ -104,17 +104,17 @@ type: cover
 
 ---
 
-먼저 aws로 다시 이동해서 Lambda 함수를 생성합니다.
+먼저 aws로 다시 이동해서 Lambda 함수를 생성한다.
 
 <br>
 
 ![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/lambda.png)
 
-위 사진과 같이 람다를 생성합니다.
+위 사진과 같이 람다를 생성한다.
 
-그 후 index.js파일안에 cloudwatch가 트리거 된 후 처리할 일들을 선언합니다.
+그 후 index.js파일안에 cloudwatch가 트리거 된 후 처리할 일들을 선언한다.
 
-저는 아래 블로그에서 index.js 파일들을 가져왔습니다.
+저는 아래 블로그에서 index.js 파일들을 가져왔다.
 
 [참고한 레퍼런스](https://diddl.tistory.com/184#toc-SNS(Simple%20Notification%20Service)%20%EC%A3%BC%EC%A0%9C%20%EC%83%9D%EC%84%B1)
 
@@ -122,7 +122,7 @@ type: cover
 <br>
 <br>
 
-마지막으로 slack webhook 의 URL을 람다의 환경변수에 등록하면 됩니다.
+마지막으로 slack webhook 의 URL을 람다의 환경변수에 등록하면 된다.
 
 ![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/state.png)
 
@@ -135,13 +135,13 @@ type: cover
 
 ![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/final.png)
 
-여기까지 진행했다면 위 사진처럼 나오게 됩니다.
+여기까지 진행했다면 위 사진처럼 나오게 된다.
 
 <br>
 
 ## 테스트
 
-여기까지 진행하면 아래처럼 슬랙으로 경고가 날라오게 됩니다.
+여기까지 진행하면 아래처럼 슬랙으로 경고가 날라오게 된다.
 
 <br>
 <br>
