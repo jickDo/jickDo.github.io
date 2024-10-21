@@ -68,12 +68,12 @@ type: cover
 
 저는 5분동안 CPU사용률이 80%를 초과한 경우 트리거 하도록 설정했습니다.
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/조건2)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/condition2.png)
 
 
 <br>
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/조건)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/condition.png)
 
 
 <br>
@@ -81,7 +81,7 @@ type: cover
 
 다음으로 넘어가게 되면 아래처럼 알림 전송에 대한 sns연결 부분이 나오는데 좀 전에 생성한 sns을 연결하면 됩니다.
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/sns연결)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/connection.png)
 
 
 <br>
@@ -95,7 +95,7 @@ type: cover
 
 슬랙 채널탭을 클릭하고 통합에서 앱추가를 선택하게 되면 아래와 같은 앱이 있습니다. 그것을 추가하고 URL을 받으면 됩니다.
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/webhook)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/webhook.png)
 
 <br>
 <br>
@@ -108,7 +108,7 @@ type: cover
 
 <br>
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/lambda)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/lambda.png)
 
 위 사진과 같이 람다를 생성합니다.
 
@@ -124,7 +124,7 @@ type: cover
 
 마지막으로 slack webhook 의 URL을 람다의 환경변수에 등록하면 됩니다.
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/환경변수)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/state.png)
 
 <br>
 <br>
@@ -133,7 +133,7 @@ type: cover
 
 ---
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/최종)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/final.png)
 
 여기까지 진행했다면 위 사진처럼 나오게 됩니다.
 
@@ -146,7 +146,7 @@ type: cover
 <br>
 <br>
 
-![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/test)
+![](https://raw.githubusercontent.com/jickDo/picture/master/Infra/slack알람/test.png)
 
 <br>
 <br>
