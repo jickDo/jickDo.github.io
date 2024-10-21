@@ -116,7 +116,7 @@ type: cover
 
 저는 아래 블로그에서 index.js 파일들을 가져왔습니다.
 
-![참고한 레퍼런스](https://diddl.tistory.com/184#toc-SNS(Simple%20Notification%20Service)%20%EC%A3%BC%EC%A0%9C%20%EC%83%9D%EC%84%B1)
+[참고한 레퍼런스](https://diddl.tistory.com/184#toc-SNS(Simple%20Notification%20Service)%20%EC%A3%BC%EC%A0%9C%20%EC%83%9D%EC%84%B1)
 
 <br>
 <br>
